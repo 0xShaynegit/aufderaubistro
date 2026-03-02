@@ -535,6 +535,12 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
 
   .site-mobile-header-wrap .site-header-row {
     gap: 2px !important;
+    justify-content: flex-start !important;
+  }
+
+  .site-mobile-header-wrap .site-header-section {
+    flex: 0 0 auto !important;
+    width: auto !important;
   }
 
   .site-header-main-section-left,

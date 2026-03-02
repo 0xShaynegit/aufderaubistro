@@ -522,13 +522,22 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
 }
 
 @media all and (max-width: 767px) {
+  .mobile-site-branding .custom-logo {
+    max-width: 90% !important;
+    height: auto !important;
+  }
+
+  .site-mobile-header-wrap .site-header-row {
+    gap: 8px !important;
+  }
+
   .mobile-language-flags {
     display: flex !important;
     align-items: center;
   }
 
   .mobile-flags-wrap .element-social-inner-wrap {
-    gap: 10px;
+    gap: 8px;
   }
 
   .mobile-flags-wrap .header-social-item img {

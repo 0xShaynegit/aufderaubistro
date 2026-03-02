@@ -497,3 +497,14 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Full-width header on all views */
+#masthead, 
+.site-header-wrap,
+.site-main-header-wrap,
+.site-header-row-container-inner {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  max-width: 100vw;
+}

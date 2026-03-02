@@ -1,28 +1,18 @@
-/* Header full-width background with normal content */
-header.site-header,
-#masthead {
-  width: 100vw !important;
-  margin-left: calc(-50vw + 50%) !important;
-  margin-right: calc(-50vw + 50%) !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.site-header-wrap {
-  width: 100vw !important;
-  margin-left: calc(-50vw + 50%) !important;
-  margin-right: calc(-50vw + 50%) !important;
-}
-
-.site-main-header-wrap {
-  width: 100vw !important;
-  margin-left: calc(-50vw + 50%) !important;
-}
-
-/* Keep this class restricted to normal width */
+/* Make red header background full width on all pages */
+.site-main-header-wrap.site-header-row-layout-contained,
 .site-header-row-layout-contained {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Keep inner content centered */
+.site-main-header-wrap .site-container {
   max-width: 1170px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  width: auto !important;
+}
+
+/* Add padding to entry on all pages to push content down */
+.entry.single-entry {
+  padding-top: 80px !important;
 }

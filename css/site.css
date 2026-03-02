@@ -265,6 +265,12 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
   min-height: 80px;
 }
 
+@media all and (max-width: 767px) {
+  .site-main-header-inner-wrap {
+    min-height: auto;
+  }
+}
+
 .transparent-header #masthead .site-main-header-wrap .site-header-row-container-inner {
   background: var(--global-palette1);
 }
@@ -523,7 +529,7 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
 
 @media all and (max-width: 767px) {
   .mobile-site-branding .custom-logo {
-    height: 100px !important;
+    height: 80px !important;
     width: auto !important;
   }
 

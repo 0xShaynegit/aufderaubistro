@@ -528,16 +528,25 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
   }
 
   .site-mobile-header-wrap .site-header-row {
-    gap: 8px !important;
+    gap: 2px !important;
+  }
+
+  .site-header-main-section-left,
+  .site-header-main-section-center,
+  .site-header-main-section-right {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .mobile-language-flags {
     display: flex !important;
     align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .mobile-flags-wrap .element-social-inner-wrap {
-    gap: 8px;
+    gap: 3px;
   }
 
   .mobile-flags-wrap .header-social-item img {

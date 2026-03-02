@@ -523,8 +523,8 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
 
 @media all and (max-width: 767px) {
   .mobile-site-branding .custom-logo {
-    max-width: 81px !important;
-    height: auto !important;
+    height: 100px !important;
+    width: auto !important;
   }
 
   .site-mobile-header-wrap .site-header-row {

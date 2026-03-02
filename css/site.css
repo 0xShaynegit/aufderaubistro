@@ -497,3 +497,47 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+/* Mobile Header Reorganization */
+@media all and (max-width: 767px) {
+  /* Hide the left section (Facebook, Phone) */
+  .site-header-main-section-left {
+    display: none !important;
+  }
+  
+  /* Hide Facebook and Phone buttons, keep flags visible */
+  .header-social-inner-wrap .social-link-facebook,
+  .header-social-inner-wrap .social-link-phone {
+    display: none !important;
+  }
+  
+  /* Center the flags in the middle */
+  .site-main-header-inner-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Move header section to center */
+  .site-header-main-section-center {
+    order: 2;
+    flex: 0 1 auto;
+  }
+  
+  /* Reposition flags to center */
+  .site-header-main-section-left-center {
+    order: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Right section with menu */
+  .site-header-main-section-right {
+    margin-left: auto;
+    order: 3;
+  }
+}

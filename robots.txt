@@ -1,4 +1,12 @@
+# Robots.txt for Auf der Au Bistro
 User-agent: *
 Allow: /
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/plugins/
+Disallow: /wp-content/themes/
+Disallow: /wp-includes/
+Disallow: /?s=
 
+# Sitemap
 Sitemap: https://aufderaubistro.com/sitemap.xml

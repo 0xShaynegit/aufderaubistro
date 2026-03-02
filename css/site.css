@@ -544,6 +544,16 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
     margin: 0 !important;
   }
 
+  .site-header-item {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .site-branding {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
   .mobile-language-flags {
     display: flex !important;
     align-items: center;

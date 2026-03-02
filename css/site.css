@@ -508,3 +508,15 @@ footer {
   margin-right: calc(-50vw + 50%);
   max-width: 100vw;
 }
+
+/* Override header max-width constraint */
+.site-header-row-layout-contained {
+  max-width: 100vw !important;
+  width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+}
+
+.site-header-row-container-inner {
+  max-width: none !important;
+}

@@ -269,6 +269,13 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
   .site-main-header-inner-wrap {
     min-height: auto;
   }
+
+  .site-mobile-header-wrap .site-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
 
 .transparent-header #masthead .site-main-header-wrap .site-header-row-container-inner {
@@ -522,42 +529,86 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
   margin-right: auto !important;
 }
 
+/* ===== Homepage Mobile Hero Text ===== */
+@media all and (max-width: 767px) {
+  .kadence-column2063_583599-ec {
+    padding-top: 100px !important;
+  }
+}
+
 /* ===== Mobile Language Flags ===== */
 .mobile-language-flags {
   display: none;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 1024px) {
   .mobile-site-branding .custom-logo {
-    height: 80px !important;
+    height: 60px !important;
     width: auto !important;
   }
 
-  .site-mobile-header-wrap .site-header-row {
-    gap: 2px !important;
-    justify-content: flex-start !important;
+  #mobile-header .site-header-row {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 4px !important;
   }
 
-  .site-mobile-header-wrap .site-header-section {
+  #mobile-header .site-header-main-section-left {
     flex: 0 0 auto !important;
-    width: auto !important;
+    min-width: 0 !important;
+  }
+
+  #mobile-header .site-header-main-section-center {
+    flex: 1 1 auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    min-width: 0 !important;
+  }
+
+  #mobile-header .site-header-main-section-right {
+    flex: 0 0 auto !important;
+    min-width: 0 !important;
   }
 
   .site-header-main-section-left,
-  .site-header-main-section-center,
   .site-header-main-section-right {
     padding: 0 !important;
     margin: 0 !important;
   }
 
+  .site-mobile-header-wrap .site-header-main-section-left {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 4px !important;
+  }
+
   .site-header-item {
     padding: 0 !important;
     margin: 0 !important;
+    min-width: auto !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
   }
 
   .site-branding {
     padding: 0 !important;
     margin: 0 !important;
+    min-width: auto !important;
+    width: auto !important;
+  }
+
+  .site-header-section {
+    min-width: auto !important;
+    width: auto !important;
+  }
+
+  .header-social-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
   }
 
   .mobile-language-flags {
@@ -565,14 +616,44 @@ button.button-style-secondary, .button.button-style-secondary, .wp-block-button_
     align-items: center;
     padding: 0 !important;
     margin: 0 !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+  }
+
+  .mobile-flags-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .mobile-flags-wrap .element-social-inner-wrap {
-    gap: 3px;
+    gap: 2px;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mobile-flags-wrap .header-social-item {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .mobile-flags-wrap .header-social-item img {
-    max-width: 40px !important;
+    max-width: 35px !important;
     height: auto;
+  }
+
+  .mobile-toggle-open-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .menu-toggle-open {
+    padding: 2px !important;
+    min-width: auto !important;
+    width: auto !important;
+  }
+
+  .menu-toggle-icon {
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }

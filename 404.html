@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Auf der Au Bistro</title>
+    <link rel="stylesheet" href="./css/site.css">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 60vh;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            color: var(--global-palette1, #a5141a);
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .error-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 500px;
+        }
+
+        .error-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .error-link {
+            padding: 12px 24px;
+            background-color: var(--global-palette1, #a5141a);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .error-link:hover {
+            background-color: var(--global-palette2, #ffb91a);
+            color: #333;
+        }
+
+        @media (max-width: 1024px) {
+            .error-code {
+                font-size: 48px;
+            }
+
+            .error-message {
+                font-size: 20px;
+            }
+
+            .error-links {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .error-link {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Page Not Found</div>
+        <div class="error-description">
+            Sorry, the page you're looking for doesn't exist. Please navigate to one of our main pages below.
+        </div>
+        <div class="error-links">
+            <a href="./" class="error-link">Home</a>
+            <a href="./pages/dinner.html" class="error-link">Dinner Menu</a>
+            <a href="./pages/lunch.html" class="error-link">Lunch Menu</a>
+            <a href="./pages/thai.html" class="error-link">Thai</a>
+            <a href="./pages/german.html" class="error-link">German</a>
+        </div>
+    </div>
+</body>
+</html>

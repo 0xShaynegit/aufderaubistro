@@ -26,3 +26,4 @@ npm-debug.log*
 # Dependencies
 package-lock.json
 yarn.lock
+manifest.json

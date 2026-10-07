@@ -27,3 +27,11 @@ npm-debug.log*
 package-lock.json
 yarn.lock
 manifest.json
+
+# AI working files (never public)
+/.tokensave/
+/.claude/
+/handover*.md
+/HANDOVER*.md
+/.md/HANDOVER.md
+/CLAUDE.md
